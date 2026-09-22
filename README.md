@@ -24,36 +24,12 @@ The physical system is a 5-DOF articulated serial arm built with 3D-printed stru
 
 | Axis | Joint Name | Actuator | Motion Range | Link Function |
 | --- | --- | --- | --- | --- |
-| **Joint 1** | `joint_1_base_rotation` | MG90S
-
- | $-90^\circ \text{ to } +90^\circ$<br> | Arm azimuthal rotation around the Z-axis
-
- |
-| **Joint 2** | `joint_2_shoulder` | MG90S
-
- | $-45^\circ \text{ to } +90^\circ$ | Shoulder pitch elevation
-
- |
-| **Joint 3** | `joint_3_forearm` | MG90S
-
- | $-90^\circ \text{ to } +60^\circ$ | Elbow flexion / extension
-
- |
-| **Joint 4** | `joint_4_wrist` | MG90S
-
- | $-90^\circ \text{ to } +90^\circ$ | Wrist axial roll
-
- |
-| **Joint 5** | `joint_5_hand` | MG90S
-
- | $-90^\circ \text{ to } +90^\circ$ | End-effector pitch & tool positioning
-
- |
-| **Tool** | `gripper` | Micro Servo
-
- | Open / Close
-
- | Side-mounted parallel claw mechanism |
+| **Joint 1** | `joint_1_base_rotation` | MG90S | $-90^\circ \text{ to } +90^\circ$<br> | Arm azimuthal rotation around the Z-axis|
+| **Joint 2** | `joint_2_shoulder` | MG90S | $-45^\circ \text{ to } +90^\circ$ | Shoulder pitch elevation |
+| **Joint 3** | `joint_3_forearm` | MG90S | $-90^\circ \text{ to } +60^\circ$ | Elbow flexion / extension |
+| **Joint 4** | `joint_4_wrist` | MG90S | $-90^\circ \text{ to } +90^\circ$ | Wrist axial roll|
+| **Joint 5** | `joint_5_hand` | MG90S | $-90^\circ \text{ to } +90^\circ$ | End-effector pitch & tool positioning |
+| **Tool** | `gripper` | Micro Servo | Open / Close | Side-mounted parallel claw mechanism |
 
 > **Mechanical Note:** The gripper assembly features a side-mounted servo configuration and a dedicated mechanical offset. To prevent trajectory deviation during Cartesian moves, a virtual frame `tool0` is placed exactly at the gripping center between the finger tips.
 
@@ -161,9 +137,7 @@ A pure trigonometric solver eliminating MoveIt service overhead entirely. Solves
 
 ## Kinematics Benchmark
 
-| Metric / Parameter | MoveIt 2 (KDL Default) | MoveIt 2 (Fixed Seed) | IKPy Optimizer | Geometric Analytical
-
- |
+| Metric / Parameter | MoveIt 2 (KDL Default) | MoveIt 2 (Fixed Seed) | IKPy Optimizer | Geometric Analytical |
 | --- | --- | --- | --- | --- |
 | **Computation Latency** | $\sim 5\text{--}15\text{ ms}$ | $\sim 5\text{ ms}$ | $\sim 2\text{--}4\text{ ms}$ | **$< 0.1\text{ ms}$** |
 | **Deterministic Output** | ❌ No (Can flip) | ⚠️ High (Seed-locked) | ⚠️ Sensitive to seed | ✅ **100% Deterministic** |
