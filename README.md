@@ -118,8 +118,8 @@ A pure trigonometric solver eliminating MoveIt service overhead entirely. Solves
     │   │   ├── analytical_sol.py    # Analytical closed-form 5-DOF IK engine[cite: 5]
     │   │   ├── ikpy_to_rviz.py      # High-frequency IKPy state publisher (50 Hz)[cite: 5]
     │   │   ├── test_moveit_5dof.py  # MoveIt 2 GetPositionIK client[cite: 5]
-    │   │   ├── test1_eeFix.py       # Decoupled gripper pitch compensation node[cite: 5]
-    │   │   └── test1_seedFix.py     # Deterministic seed IK execution node[cite: 5]
+    │   │   ├── test1_pinzaFissa.py       # Decoupled gripper pitch compensation node[cite: 5]
+    │   │   └── test1_seedFisso.py     # Deterministic seed IK execution node[cite: 5]
     │   ├── package.xml[cite: 5]
     │   └── setup.py[cite: 5]
     │
@@ -201,7 +201,7 @@ In a separate terminal, trigger a Cartesian target trajectory using the fixed-se
 
 ```bash
 source ~/ros2_ws/install/setup.bash
-ros2 run mio_progetto test1_seedFix
+ros2 run mio_progetto test1_seedFisso
 
 ```
 
