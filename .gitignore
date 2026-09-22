@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# IDE e OS
+.vscode/
+.idea/
+.DS_Store
+*.swp

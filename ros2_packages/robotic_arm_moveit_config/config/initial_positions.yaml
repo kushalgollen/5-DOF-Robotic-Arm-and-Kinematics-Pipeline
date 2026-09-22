@@ -1,0 +1,8 @@
+# Default initial positions for robotic_arm_5dof's ros2_control fake system
+
+initial_positions:
+  joint_1_base_rotation: 0
+  joint_2_shoulder: 0
+  joint_3_forearm: 0
+  joint_4_wrist: 0
+  joint_5_hand: 0

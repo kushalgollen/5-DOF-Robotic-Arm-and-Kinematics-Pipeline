@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: robotic_arm_description_test1
+    relative_path: urdf/ros2_Robo_Arm_Robus.urdf
+  srdf:
+    relative_path: config/robotic_arm_5dof.srdf
+  package_settings:
+    author_name: Kushal Gollen
+    author_email: klg.gollen@gmail.com
+    generated_timestamp: 1786900466
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
