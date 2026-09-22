@@ -24,12 +24,12 @@ The physical system is a 5-DOF articulated serial arm built with 3D-printed stru
 
 | Axis | Joint Name | Actuator | Motion Range | Link Function |
 | --- | --- | --- | --- | --- |
-| **Joint 1** | `joint_1_base_rotation` | MG90S | $-90^\circ \text{ to } +90^\circ$<br> | Arm azimuthal rotation around the Z-axis|
-| **Joint 2** | `joint_2_shoulder` | MG90S | $-45^\circ \text{ to } +90^\circ$ | Shoulder pitch elevation |
-| **Joint 3** | `joint_3_forearm` | MG90S | $-90^\circ \text{ to } +60^\circ$ | Elbow flexion / extension |
-| **Joint 4** | `joint_4_wrist` | MG90S | $-90^\circ \text{ to } +90^\circ$ | Wrist axial roll|
+| **Joint 1** | `joint_1_base_rotation` | 35g Servo | $-90^\circ \text{ to } +90^\circ$<br> | Arm azimuthal rotation around the Z-axis |
+| **Joint 2** | `joint_2_shoulder` | 35g Servo | $-45^\circ \text{ to } +90^\circ$ | Shoulder pitch elevation |
+| **Joint 3** | `joint_3_forearm` | 35g Servo | $0^\circ \text{ to } +90^\circ$ | Elbow flexion / extension |
+| **Joint 4** | `joint_4_wrist` | MG90S | $-90^\circ \text{ to } +90^\circ$ | Wrist axial roll |
 | **Joint 5** | `joint_5_hand` | MG90S | $-90^\circ \text{ to } +90^\circ$ | End-effector pitch & tool positioning |
-| **Tool** | `gripper` | Micro Servo | Open / Close | Side-mounted parallel claw mechanism |
+| **Tool** | `gripper` | MG90s | Open / Close | Side-mounted parallel claw mechanism |
 
 > **Mechanical Note:** The gripper assembly features a side-mounted servo configuration and a dedicated mechanical offset. To prevent trajectory deviation during Cartesian moves, a virtual frame `tool0` is placed exactly at the gripping center between the finger tips.
 
