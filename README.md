@@ -5,8 +5,8 @@ A complete, end-to-end mechatronics and robotics manipulation project. This repo
 ---
 
 <p align="left">
-  <img src="docs/images/banner_1.jpeg" width="375">
-  <img src="docs/images/banner_2.jpeg" width="375">
+  <img src="docs/images/banner_1.jpeg" width="48%" />
+  <img src="docs/images/banner_2.jpeg" width="48%" />
 </p>
 
 ---
