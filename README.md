@@ -38,10 +38,6 @@ A complete, end-to-end mechatronics and robotics manipulation project. This repo
 
 ## 📸 Hardware & Mechanical Architecture
 
-| Front View & Gripper | Wrist Detail & Flange | Side Profile & Base |
-| --- | --- | --- |
-|  |  |  |
-
 ### Electronics & Power Distribution
 
 * **Main Board:** **Arduino UNO R4**, used for accurate hardware PWM signal generation and responsive serial communication.
@@ -124,19 +120,11 @@ A fast trigonometric solver that bypasses MoveIt completely:
 ```text
 .
 ├── docs/                            # Documentation assets
-│   └── images/                      # Hardware photos and simulation media
-│       ├── gripper_front.jpeg
-│       ├── wrist_detail.jpeg
-│       └── side_profile.jpeg
+│   └── images/                      # Hardware photos 
 │
 ├── mechanical/                      # CAD files and 3D printing models
 │   ├── images/                      # Exploded renders and assembly views
 │   └── print_ready/                 # STL files ready for slicing
-│       ├── base_turntable_bearings.stl
-│       ├── shoulder_link.stl
-│       ├── forearm_link.stl
-│       ├── wrist_link.stl
-│       └── gripper_claws.stl
 │
 ├── without_ROS/                     # Early standalone embedded scripts
 │   ├── braccio_IK_convertito.ino    # Arduino C++ geometric kinematics firmware
