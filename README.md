@@ -1,6 +1,13 @@
 # 5-DOF Robotic Arm & Kinematics Pipeline
 
-Questo repository documenta l'intero percorso ingegneristico di un braccio robotico a 5 gradi di libertà (5-DOF): partito come un prototipo fatto in casa basato su Arduino UNO R4, cinematica trigonometrica ed esperimenti di visual tracking con OpenCV, fino a un'architettura completa su **ROS 2 Humble**, **MoveIt 2**, **ros2_control** e vari solutori di cinematica inversa (analitici e numerici).
+A complete, end-to-end mechatronics and robotics manipulation project. This repository documents the transition from a standalone embedded prototype (Arduino, direct geometric kinematics, and OpenCV-based visual servoing) to a modular, industrial-grade software architecture powered by **ROS 2 Humble**, **MoveIt 2**, **ros2_control**, and numerical/analytical kinematic solvers.
+
+---
+
+<p align="left">
+  <img src="docs/images/banner_1.jpeg" width="750">
+  <img src="docs/images/banner_2.jpeg" width="750">
+</p>
 
 ---
 
